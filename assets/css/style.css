@@ -1,0 +1,152 @@
+@font-face{
+	font-family: h_minecraft;
+	src: url(../fonts/h.ttf);
+}
+
+@font-face{
+	font-family: main;
+	src: url(../fonts/main.ttf);
+}
+
+{
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: h_minecraft;
+	margin: 0;
+	text-shadow: 2px 2px 2px #000;
+}
+
+
+
+.main{
+	width: 100%;
+	height: 100vh;
+
+	background: url(../images/main.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10vh;
+}
+
+.header__h1 {
+	position: relative;
+	top: 2vh;
+	right: 5vh;
+
+	text-align: center;
+	color: orange;
+	font-size: 75px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.nav {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.nav__link {
+	font-family: main;
+	text-shadow: 2px 2px 2px #000;
+	vertical-align: top;
+	display: block;
+
+	margin: 0 20px;
+	position: relative;
+
+	text-decoration: none;
+	color: #fff;
+
+	transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+	color: orange;
+}
+
+.yarik {
+	position: absolute;
+	top: 25vh;
+	animation-name: yarik;
+	animation-duration: 3000ms;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes yarik {
+	0% {
+		transform: translate(-500px, 0);
+	}
+	100% {
+		transform: translate(200px, 0);
+	}
+}
+
+.ruscreat {
+	position: absolute;
+
+	top: 25vh;
+	animation-name: ruscreat;
+	animation-duration: 3000ms;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes ruscreat {
+	0% {
+		transform: translate(-500px, 0);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+.about {
+	text-align: center;
+	font-family: main;
+	text-shadow: 2px 2px 2px #000;
+	color: orange;
+
+	height: 150px;
+	width: 350px;
+
+	position: absolute;
+	left: 95vh;
+	top: 35vh;
+
+	border: 3px orange ridge;
+	padding: 5px 5px 5px 5px;
+	border-radius: 8px;
+
+	animation-name: about;
+	animation-duration: 3000ms;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes about {
+	0% {
+		transform: translate(200px, 0);
+	}
+	100% {
+		transform: translate(0px, 0);
+	}
+}
