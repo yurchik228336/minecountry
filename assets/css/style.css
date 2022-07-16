@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5,h6 {
 	justify-content: space-between;
 	align-items: center;
 	margin: 10vh;
+	text-align: center;
 }
 
 .header__h1 {
@@ -54,6 +55,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 75px;
 	line-height: 1;
 	text-transform: uppercase;
+	text-shadow: 4px 4px 4px #000;
 }
 
 .nav {
@@ -78,6 +80,26 @@ h1,h2,h3,h4,h5,h6 {
 
 .nav__link:hover {
 	color: orange;
+	animation-name: link;
+	animation-duration: 5s;
+}
+
+@keyframes link{
+	0% {
+		transform: translate(-10px, 0);
+	}
+	25% {
+		transform: translate(-5px, 0);
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	75% {
+		transform: translate(5px, 0);
+	}
+	100% {
+		transform: translate(10px, 0);
+	}
 }
 
 .yarik {
